@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  src: url(../fonts/FiraSans-Black.ttf);
+  font-family: fir-font;
+}
+body {
+  background-color: #150707;
+  color: white;
+}
+.about {
+  font-family: fir-font;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about .main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about img {
+  width: 20%;
+  margin: 50px;
+  height: max-content;
+}
+
+.about_txt {
+  display: block;
+  max-width: 50%;
+}
+h1 {
+  color: #0051ae;
+  font-size: 50px;
+  padding: 5px;
+}
+h5 {
+  font-size: 30px;
+  padding: 5px;
+}
+span {
+  color: #4b9fff;
+}
+p {
+  font-size: 20px;
+  padding: 5px;
+  line-height: 2;
+}
+@media (max-width: 800px) {
+  .about img {
+    width: 50%;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
